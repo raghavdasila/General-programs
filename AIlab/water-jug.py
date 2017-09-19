@@ -1,3 +1,5 @@
+#Water jug problem: Attempt to get a certain volume of water provided two jugs of different volume
+
 A=["Empty Jar ","Fill Jar "," is poured to "]
 def op(i,v):return " J"+i+" has "+str(v)
 def solve(J,d,il,ir):
