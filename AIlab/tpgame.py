@@ -1,3 +1,6 @@
+#Tic-Tac-Toe game between two bots, both try to not lose 
+#rather than trying to win resulting in an interesting game with wins, losses and draws!
+
 import os
 import random
 from time import *
