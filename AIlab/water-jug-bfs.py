@@ -1,3 +1,5 @@
+#Water jug problem: Attempt to get a certain volume of water provided two jugs of different volume
+
 class sol:
 	def __init__(self,J,p):self.J,self.p=J,p
 def operate(p,J):
