@@ -1,3 +1,5 @@
+#The classic tile puzzle using Manhattan Distance
+
 import os
 from time import *
 def mvup(G,P):G[P[0]],G[P[0]-3],P[0]=G[P[0]-3],G[P[0]],P[0]-3
