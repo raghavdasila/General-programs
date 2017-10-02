@@ -34,11 +34,11 @@ if __name__=="__main__":
 					for item in obj:
 						if is_near(item,[i,j]) and not visited[i][j]:
 							obj.append([i,j])
-							visited[i][j]=True
 							marked=True
 							break
 					if marked:break
 				if not marked and not visited[i][j]:objects.append([[i,j]])
+			visited[i][j]=True
 	for i in xrange(0, len(objects)):
 		print "Enter Colour for object ",i+1
 		color=raw_input()
