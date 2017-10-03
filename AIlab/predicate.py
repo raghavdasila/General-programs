@@ -17,11 +17,11 @@ if __name__=="__main__":
 	for i in xrange(0,n):
 		 ins=list(bin(i)[2:])
 		 while len(ins)<len(inputs):
-		 	ins=[0]+ins
+		 	ins=['0']+ins
 		 print ins,":",
 		 e_pred=""
 		 for t in tokens:
 		 	if t in inputs:
-		 		t=str(ins[inputs.index(t)])
+		 		t=ins[inputs.index(t)]
 		 	e_pred+=t+" "
 		 print int(eval(e_pred))
