@@ -13,8 +13,9 @@ if __name__=="__main__":
 			inputs.append(tokens[t])
 	n=2**(len(inputs))
 	print "Inputs\tResult"
+	print inputs
 	for i in xrange(0,n):
-		 ins=[int(x) for x in list(bin(i)[2:])]
+		 ins=list(bin(i)[2:])
 		 while len(ins)<len(inputs):
 		 	ins=[0]+ins
 		 print ins,":",
