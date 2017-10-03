@@ -11,12 +11,13 @@ if __name__=="__main__":
 		if tokens[t]=='iff':tokens[t]="=="
 		if tokens[t] in entities and tokens[t] not in inputs:
 			inputs.append(tokens[t])
-	n=2**(len(inputs)+1)
+	n=2**(len(inputs))
+	print "Inputs\tResult"
 	for i in xrange(0,n):
 		 ins=[int(x) for x in list(bin(i)[2:])]
 		 while len(ins)<len(inputs):
 		 	ins=[0]+ins
-		 print "For inputs:",ins,":",
+		 print ins,":",
 		 e_pred=""
 		 for t in tokens:
 		 	if t in inputs:
